@@ -1,0 +1,20 @@
+name: Simple GitHub Actions Demo
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Print Hello World
+        run: echo "Hello, world!"
+
+      - name: List files in the repo
+        run: ls -al
