@@ -3,7 +3,7 @@ name: Simple GitHub Actions Demo
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
